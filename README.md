@@ -48,7 +48,6 @@ The backend runs on `http://127.0.0.1:8000`.
 
 ```bash
 cd frontend
-you-are-a-senior-ui-ux/raqeeb
 npm install
 cp .env.example .env
 ```
