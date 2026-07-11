@@ -1,2 +1,16 @@
-frontend/node_modules
-backend/__pycache__
+# those files are too big to be commited to github and they aren't needed
+# they are created on run time no need to push them to github it is hard any way and takes too long for git add to run with them
+# Python
+.venv/
+.venv-backend/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# Environment
+.env

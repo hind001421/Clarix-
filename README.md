@@ -6,6 +6,8 @@ and contract text extraction for PDF, DOCX, and TXT files.
 
 ## Project Structure
 
+i added notebooks folder for experimenting with different approaches before moving to source code (src) folder
+
 ```text
 backend/
   main.py
