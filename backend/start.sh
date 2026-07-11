@@ -8,7 +8,7 @@ if [ -d ".venv" ]; then
   exit 1
 fi
 
-PYTHON_BIN="../.venv-backend/bin/python"
+PYTHON_BIN=".venv-backend/bin/python"
 
 if [ ! -x "$PYTHON_BIN" ]; then
   echo "Backend environment not found. Run: python3 -m venv .venv-backend && .venv-backend/bin/pip install -r backend/requirements.txt"

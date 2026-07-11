@@ -29,7 +29,7 @@ Run this once. The virtual environment must stay outside `backend/` so Uvicorn
 reload watches only source files:
 
 ```bash
-cd /Users/hind/Documents/Codex/2026-06-29/you-are-a-senior-ui-ux
+cd backend
 python3 -m venv .venv-backend
 .venv-backend/bin/pip install -r backend/requirements.txt
 cp backend/.env.example backend/.env
@@ -38,24 +38,26 @@ cp backend/.env.example backend/.env
 ## Run Backend
 
 ```bash
-cd /Users/hind/Documents/Codex/2026-06-29/you-are-a-senior-ui-ux
+cd backend
 backend/start.sh
 ```
 
 The backend runs on `http://127.0.0.1:8000`.
+
+python3 -m venv .venv-backend
 
 ## Frontend Setup
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env
+cp .env.example .env  #not needed
 ```
 
 ## Run Frontend
 
 ```bash
-cd /Users/hind/Documents/Codex/2026-06-29/you-are-a-senior-ui-ux/raqeeb
+cd frontend
 npm run dev
 ```
 
