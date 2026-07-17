@@ -1,6 +1,6 @@
-# Raqeeb Demo
+# Clarix Demo
 
-Raqeeb is an AI Compliance Assistant for Saudi businesses. This hackathon demo
+Clarix is an AI Compliance Assistant for Saudi businesses. This hackathon demo
 includes a React + Tailwind frontend, a FastAPI backend, Arabic/English support,
 and contract text extraction for PDF, DOCX, and TXT files.
 
@@ -9,20 +9,17 @@ and contract text extraction for PDF, DOCX, and TXT files.
 i added notebooks folder for experimenting with different approaches before moving to source code (src) folder
 
 ```text
-backend/
-  main.py
-  routers/
-  services/
-  schemas/
-  utils/
-  requirements.txt
-  README.md
-raqeeb/
-  src/
-    components/
-    services/
-    styles.css
-    main.jsx
+clearix
+├── app/
+│   ├── frontend/
+│   └── backend/
+├── data/
+│   ├── clean_data/
+│   └── raw_data/
+├── notebooks/
+│   ├── data_cleaning/
+│   └── rag_testing/
+└── .gitignore
 ```
 
 ## Backend Setup
@@ -31,7 +28,7 @@ Run this once. The virtual environment must stay outside `backend/` so Uvicorn
 reload watches only source files:
 
 ```bash
-cd backend
+cd app/backend
 python3 -m venv .venv-backend
 .venv-backend/bin/pip install -r backend/requirements.txt
 cp backend/.env.example backend/.env
@@ -40,7 +37,7 @@ cp backend/.env.example backend/.env
 ## Run Backend
 
 ```bash
-cd backend
+cd app/backend
 backend/start.sh
 ```
 
@@ -51,7 +48,7 @@ python3 -m venv .venv-backend
 ## Frontend Setup
 
 ```bash
-cd frontend
+cd app/frontend
 npm install
 cp .env.example .env  #not needed
 ```
@@ -59,7 +56,7 @@ cp .env.example .env  #not needed
 ## Run Frontend
 
 ```bash
-cd frontend
+cd app/frontend
 npm run dev
 ```
 
